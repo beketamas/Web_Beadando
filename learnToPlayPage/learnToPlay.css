@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbarPages{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(173, 172, 172);
+    width: 80vw;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerContent, .navbarPages{
+    border: 2px solid black;
+
+}
+
+#navPages, #footerContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#navItem, #navItemHome{
+    color: black;
+    font-weight: bold;
+    
+}
+
+#navItemHome{
+    flex: 0.8;
+}
+
+header{
+    margin-top: 20px;
+}
+
+footer{
+    margin-bottom: 20px;
+}
+
+.navbarPages{
+    border-bottom: none;
+}
+
+#footerContent{
+    background-color: rgb(173, 172, 172);
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 8vh;
+    border-top: none;
+}
+
+.learnToPlayContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+}
+
+.learnToPlayContent{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+}
+
+.ruleContainer{
+    display: flex;
+    flex-direction: column;
+    height: 140vh;  
+    width: auto;
+    flex: 1;
+    border: 2px solid black;
+}
+
+.termContainer{
+    display: flex;
+    flex-direction: column;
+    height: 140vh;
+    width: 14vw;
+    background-color: rgb(173, 172, 172);
+    border: 2px solid black;
+    border-left: none;
+}
+
+.rules{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 100px;
+}
+
+#rule{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(173, 172, 172);
+    width: 15vw;
+    height: 30vh;
+    border: 2px solid black;
+}
+
+ul{
+    margin-left: 20px;
+}
+
+#land{
+    width: 100px;
+    height: 130px;
+}
+
+#mana{
+    width: 100px;
+    height: 100px;
+}
+
+#imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.turnStructure{
+    margin-top: 50px;
+}
+
+.secondRow{
+    margin-top: 20px;
+}
+
+.firstRow, .secondRow{
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.turnStructure{
+    display: flex;
+    filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    justify-content: center;
+    flex-direction: column;
+}
+
+.arrow{
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%);    
+    width: 200px;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    /*border: 2px solid black;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    
+}
+
+.arrow:hover{
+    transform: scale(1.05);
+}
+
+
+#firstLine{
+    height: 0.8px;
+    color: #333;
+    background-color: #333;
+    width: 60vw;
+}
+
+
+.lineContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explainStep{
+    display: flex;
+    padding: 5px;
+    width: 30vw;
+    height: 40vh;
+    justify-content: center;
+    align-items: end;
+}
+
+.castSpells{
+    display: flex;
+    background-color: rgb(173, 172, 172);
+    width: 30vw;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+.explainContainer{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
