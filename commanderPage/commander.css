@@ -1,8 +1,11 @@
 .commanderContainer{
     display: flex;
-    height: 200vh;
-    justify-content: center;
-    align-items: center;
+    height: 84vh;
+    justify-content: safe center;
+    align-items: safe center;
+    overflow-y: overlay;
+    scrollbar-gutter: stable both-edges;
+
 }
 
 #commanderContent{
@@ -14,6 +17,8 @@
     border: 2px solid black;
     flex-direction: column;
     gap: 50px;
+    border-top: none;
+    border-bottom: none;
 }
 
 
@@ -28,10 +33,17 @@
     padding: 50px;
 }
 
-.deckContainer { grid-area: 1 / 1 / 4 / 3; background-color: rgb(173, 172, 172); }
-.singletonContainer { grid-area: 4 / 1 / 5 / 3; background-color: rgb(173, 172, 172);}
-.commanderCardContainer { grid-area: 1 / 3 / 3 / 6; background-color: rgb(173, 172, 172);}
-.tableContainer { grid-area: 3 / 3 / 5 / 6; background-color: rgb(173, 172, 172);}
+.deckContainer { grid-area: 1 / 1 / 4 / 3;}
+.singletonContainer { grid-area: 4 / 1 / 5 / 3;}
+.commanderCardContainer { grid-area: 1 / 3 / 3 / 6;}
+.tableContainer { grid-area: 3 / 3 / 5 / 6;}
+
+.deckContainer, .singletonContainer,
+.commanderCardContainer, .tableContainer{
+    background-color: rgba(173, 172, 172, 0.5);
+    border-radius: 10px;
+    border: 2px solid black;
+}
 
 .deckContainer, 
 .singletonContainer, .tableContainer{
@@ -62,7 +74,9 @@
 .whyPlayContainer{
     display: flex;
     flex-direction: column;
-    background-color: rgb(173, 172, 172);
+    background-color: rgba(173, 172, 172, 0.5);
+    border-radius: 10px;
+    border: 2px solid black;
     width: 70vw;
     height: 25vh;
     padding: 10px;
@@ -85,7 +99,9 @@ hr{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(173, 172, 172);
+    background-color: rgba(173, 172, 172, 0.5);
+    border-radius: 10px;
+    border: 2px solid black;
     width: 40vw;
     height: 65vh;
     gap: 20px;

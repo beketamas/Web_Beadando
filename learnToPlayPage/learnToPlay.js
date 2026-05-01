@@ -18,19 +18,21 @@ nyilak.forEach(element => {
     
     element.style.cursor = "pointer";
     element.addEventListener("click", (x) => {
-        let block = document.getElementById("explainStep");
-        x.target.style.backgroundColor = "blue";
-        x.target.style.color = "white";
-
-        nyilak.forEach(element =>{
-            if(element != x.target){
-                element.style.backgroundColor = "white";
-                element.style.color = "black";
-
-            }
-        });
-
-        block.innerHTML = `<div><p>${tomb[parseInt(x.target.title)]}</p></div>`;
+        if(x.target.tagName == "DIV"){
+            let block = document.getElementById("explainStep");
+            x.target.style.backgroundColor = "blue";
+            x.target.style.color = "white";
+    
+            nyilak.forEach(element =>{
+                if(element != x.target){
+                    element.style.backgroundColor = "rgba(173, 172, 172, 0.5)";
+                    element.style.color = "black";
+    
+                }
+            });
+    
+            block.innerHTML = `<div><p>${tomb[parseInt(x.target.title)]}</p></div>`;
+        }
 
     })
 })

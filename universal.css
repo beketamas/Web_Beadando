@@ -6,14 +6,16 @@
 .navbarPages{
     display: flex;
     flex-direction: row;
-    background-color: rgb(173, 172, 172);
     width: 80vw;
     height: 8vh;
     justify-content: center;
     align-items: center;
     border: 2px solid black;
-    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(173, 172, 172, 0.5);
 }
+
 
 #navPages, #footerContainer{
     display: flex;
@@ -30,23 +32,23 @@
     flex: 0.8;
 }
 
-header{
-    margin-top: 20px;
-}
-
-footer{
-    margin-bottom: 20px;
-}
 
 #footerContent{
     border: 2px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #footerContent{
-    background-color: rgb(173, 172, 172);
+    background-color: rgba(173, 172, 172, 0.5);
     justify-content: center;
     align-items: center;
     width: 80vw;
     height: 8vh;
-    border-top: none;
+}
+
+body{
+    background-image: url(/img/background.png);
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
 }
