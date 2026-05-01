@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/universal.css">
+    <link rel="stylesheet" href="commander.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav id="navPages">
+            <div class="navbarPages">
+                <a id="navItemHome" class="nav-item nav-link" href="#">Magic: The Gathering</a>
+                <a id="navItem" class="nav-item nav-link" href="/homePage/index.html">HOME</a>
+                <a id="navItem" class="nav-item nav-link" href="/learnToPlayPage/learnToPlay.html">LEARN TO PLAY</a>
+                <a id="navItem" class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
+                <a id="navItem" class="nav-item nav-link" href="/anatomyPage/anatomy.html">THE ANATOMY</a>
+                <a id="navItem" class="nav-item nav-link" href="/commanderPage/commander.html">COMMANDER</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="commanderContainer">
+            <article id="commanderContent">
+                
+                 <article class="formatContainer">
+                    
+                    <section class="deckContainer">
+                        <h3>Your 100-card deck</h3>
+                        <figure>
+                            <img src="/img/Magic_card_back.png" alt="100-card deck upsidedown">
+                        </figure>
+                    </section>
+                    
+                    <section class="singletonContainer">
+                        <h3>Singleton Rule</h3>
+                        <p>A deck has no 100 card minimum. Building a deck that works consistently yet contains no duplicates can be a creative challenge, or it can be the perfect format to take advantage of a small card collection that might not have multiple copies of rare cards.</p>
+                    </section>
+                    
+                    <section class="commanderCardContainer">
+                        <figure>
+                            <img id="commander_img" src="/img/commander_card.jpg" alt="Commander Card">
+                        </figure>
+
+                        <div class="textContainer">
+                            <h3>Your Commander</h3>
+                            <p>A player's commander works differently from other cards in the game. Before the game begins, each player sets their commander aside in a special zone, the command zone. You may cast your commander from the command zone for its normal costs plus the "commander tax", an additional for each previous time it has been cast from the command zone this way (initially an additional cost of 0). If your commander moves to the graveyard or exile, you may choose to put it into the command zone as a state-based action upon it entering said zone; therefore, abilities that trigger when a creature dies or is exiled work as normal when a commander dies or is exiled, but the commander will still end up in the command zone. If your commander moves to a hidden zone (one that is not visible to all players, such as your hand or library), you may choose to put it back into the command zone as a replacement effect.</p>
+                        </div>
+                    </section>
+
+                    <section class="tableContainer">
+                        <table id="differenceTable">
+                            <thead>
+                                <th></th>
+                                <th>Commander</th>
+                                <th>Standard</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Difference 1</td>
+                                    <td>Example 1</td>
+                                    <td>Example 1</td>
+                                </tr>
+                                <tr>
+                                    <td>Difference 2</td>
+                                    <td>Example 2</td>
+                                    <td>Example 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Difference 3</td>
+                                    <td>Example 3</td>
+                                    <td>Example 3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                </article>
+
+
+                <section class="whyPlayContainer">
+                    <h3>Why play commander?</h3>
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 2</li>
+                    </ul>
+                    <p>Commander is the most popular, casual, and social format in Magic: The Gathering, offering a non-rotating, budget-friendly, and highly creative 100-card multiplayer experience. It allows players to build around specific legendary creatures, utilize nearly any card in MTG history, and enjoy varied, unpredictable games that focus on fun over cutthroat competition. It is also great to play with friends, and if you're playing a game of Commander with three or more people, you play against each other in a free-for-all multiplayer format. No matter the outcome, Commander gives players the tools to express themselves through strategy, skill, and a whole lot of deck building fun.</p>
+                </section>
+
+                <hr>
+
+                <form action="" method="post" id="commanderStandard">
+                    <h3>Commander Or Standard</h3>
+
+                    <div>
+                        <label for="email">Your Email</label><br>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div>
+                        <label for="commanderOrStandard">Favourite Format</label><br>
+    
+                        <input type="radio" name="commanderOrStandard" id="commander">
+                        <label for="commander">Commander</label><br>
+    
+                        <input type="radio" name="commanderOrStandard" id="standard">
+                        <label for="commander">Standard</label><br>
+                    </div>
+
+                    <div>
+                        <label for="opinnion">Why is this your favourite?</label><br>
+    
+                        <textarea name="opinnion" id="opinnion" rows="5" cols="50">
+                        </textarea><br>
+                    </div>
+
+                    <div id="checkboxDiv">
+                        <input type="checkbox" name="reciveEmail" id="reciveEmail">
+                        <label for="reciveEmail">Recive a chart of this survey with other people's answers?</label>
+                    </div>
+
+                    <div id="buttonDiv">
+                        <input type="submit" value="SUBMIT">
+                        <input type="button" value="RESET">
+                    </div>
+                </form>
+
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div id="footerContainer">
+            <div id="footerContent">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

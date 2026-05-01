@@ -1,0 +1,124 @@
+.commanderContainer{
+    display: flex;
+    height: 200vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#commanderContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 200vh;
+    border: 2px solid black;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+
+.formatContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 80vw;
+    height: 80vh;
+    gap: 10px;
+    padding: 50px;
+}
+
+.deckContainer { grid-area: 1 / 1 / 4 / 3; background-color: rgb(173, 172, 172); }
+.singletonContainer { grid-area: 4 / 1 / 5 / 3; background-color: rgb(173, 172, 172);}
+.commanderCardContainer { grid-area: 1 / 3 / 3 / 6; background-color: rgb(173, 172, 172);}
+.tableContainer { grid-area: 3 / 3 / 5 / 6; background-color: rgb(173, 172, 172);}
+
+.deckContainer, 
+.singletonContainer, .tableContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.commanderCardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+#commander_img{
+    width: 11vw;
+    height: 30vh;
+}
+
+.whyPlayContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(173, 172, 172);
+    width: 70vw;
+    height: 25vh;
+    padding: 10px;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+hr{
+    width: 60vw;
+    border: none;
+    color: black;
+    background-color: black;
+    height: 1px;
+}
+
+#commanderStandard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(173, 172, 172);
+    width: 40vw;
+    height: 65vh;
+    gap: 20px;
+}
+
+#commanderStandard > div{
+    width: 35vw;
+}
+
+#commanderStandard > div > label{
+    font-size: 1.5rem;
+}
+
+#buttonDiv{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#buttonDiv > input{
+    width: 8vw;
+    height: 5vh;
+}
+
+#differenceTable{
+    width: 40vw;
+    height: 25vh;
+}
+
+td, th{
+    border: 2px solid black;
+}
+
+th{
+    height: 5vh;
+}

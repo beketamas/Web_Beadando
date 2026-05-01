@@ -1,50 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.navbarPages{
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(173, 172, 172);
-    width: 80vw;
-    height: 8vh;
-    justify-content: center;
-    align-items: center;
-}
-
-#navPages, #footerContainer{
-    display: flex;
-    justify-content: center;
-}
-
-#footerContent, .cardColors, .navbarPages{
-    border: 2px solid black;
-
-}
-
-#navItem, #navItemHome{
-    color: black;
-    font-weight: bold;
-    
-}
-
-#navItemHome{
-    flex: 0.8;
-}
-
-header{
-    margin-top: 20px;
-}
-
-footer{
-    margin-bottom: 20px;
-}
-
-.navbarPages{
-    border-bottom: none;
-}
-
 #footerContent{
     background-color: rgb(173, 172, 172);
     justify-content: center;
@@ -61,6 +14,7 @@ footer{
     height: 130vh;
     width: 80vw;
     padding: 2rem;
+    border: 2px solid black;
 }
 
 .color{
