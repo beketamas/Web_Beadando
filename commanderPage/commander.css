@@ -1,3 +1,8 @@
+:root{
+    --bg: rgba(255, 255, 255, 0.5);
+}
+
+
 .commanderContainer{
     display: flex;
     height: 84vh;
@@ -14,11 +19,10 @@
     justify-content: center;
     width: 80vw;
     height: 200vh;
-    border: 2px solid black;
+    border: 1px solid black;
     flex-direction: column;
     gap: 50px;
-    border-top: none;
-    border-bottom: none;
+    border-radius: 10px;
 }
 
 
@@ -37,13 +41,6 @@
 .singletonContainer { grid-area: 4 / 1 / 5 / 3;}
 .commanderCardContainer { grid-area: 1 / 3 / 3 / 6;}
 .tableContainer { grid-area: 3 / 3 / 5 / 6;}
-
-.deckContainer, .singletonContainer,
-.commanderCardContainer, .tableContainer{
-    background-color: rgba(173, 172, 172, 0.5);
-    border-radius: 10px;
-    border: 2px solid black;
-}
 
 .deckContainer, 
 .singletonContainer, .tableContainer{
@@ -74,9 +71,6 @@
 .whyPlayContainer{
     display: flex;
     flex-direction: column;
-    background-color: rgba(173, 172, 172, 0.5);
-    border-radius: 10px;
-    border: 2px solid black;
     width: 70vw;
     height: 25vh;
     padding: 10px;
@@ -99,9 +93,6 @@ hr{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(173, 172, 172, 0.5);
-    border-radius: 10px;
-    border: 2px solid black;
     width: 40vw;
     height: 65vh;
     gap: 20px;
@@ -137,4 +128,17 @@ td, th{
 
 th{
     height: 5vh;
+}
+
+
+#commanderStandard, .whyPlayContainer,
+.deckContainer, .singletonContainer,
+.commanderCardContainer, .tableContainer{
+    background-color: rgba(5, 10, 20, 0.9);
+    background-image: radial-gradient(at 20% 30%, rgba(20, 20, 100, 0.6) 0%, transparent 80%), radial-gradient(at 80% 70%, rgba(0, 191, 255, 0.3) 0%, transparent 80%);
+    border: 1px solid rgba(0, 212, 255, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.25), inset 0 0 20px rgba(0, 212, 255, 0.15);
+    color: #E0F2F1;
+    backdrop-filter: blur(8px);
 }

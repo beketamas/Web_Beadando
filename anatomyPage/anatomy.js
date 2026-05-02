@@ -23,7 +23,7 @@ boxes.forEach(element => {
     
             boxes.forEach(element =>{
                 if(element != x.target){
-                    element.style.backgroundColor = "rgba(173, 172, 172, 0.5)";
+                    element.style.backgroundColor = "rgba(5, 10, 20, 0.9)";
                     element.style.color = "black";
     
                 }

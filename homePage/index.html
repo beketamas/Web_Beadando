@@ -12,12 +12,12 @@
     <header>
         <nav id="navPages">
             <div class="navbarPages">
-                <a id="navItemHome" class="nav-item nav-link" href="#">Magic: The Gathering</a>
-                <a id="navItem" class="nav-item nav-link" href="#">HOME</a>
-                <a id="navItem" class="nav-item nav-link" href="/learnToPlayPage/learnToPlay.html">LEARN TO PLAY</a>
-                <a id="navItem" class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
-                <a id="navItem" class="nav-item nav-link" href="/anatomyPage/anatomy.html">THE ANATOMY</a>
-                <a id="navItem" class="nav-item nav-link" href="/commanderPage/commander.html">COMMANDER</a>
+                <a style="color:#E0F2F1;" id="navItemHome" class="nav-item nav-link" href="#">Magic: The Gathering</a>
+                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="#">HOME</a>
+                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/learnToPlayPage/learnToPlay.html">LEARN TO PLAY</a>
+                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
+                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/anatomyPage/anatomy.html">THE ANATOMY</a>
+                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/commanderPage/commander.html">COMMANDER</a>
             </div>
         </nav>
     </header>
@@ -25,9 +25,14 @@
         <div id="homeContainer">
             <article id="homeContent">
                 <article class="contentGrid">
-                    <section class="welcome">WELCOME!</section>
-                    <section class="whatIsMagic">WHAT IS MAGIC?</section>
-                    <section class="howToStart">HOW TO START?</section>
+                    <section class="whatIsMagic">
+                        <h4>WHAT IS MAGIC?</h4>
+                        <p>Magic: The Gathering is a table top, trading card game, created by Richard Garfield. The comapany, Wizards Of The Coast, released Magic in 1983. Players in a game of Magic represent powerful dueling wizards called Planeswalkers. Each card a player draws from their deck represents a magical spell which can be used to their advantage in battle.</p>
+                    </section>
+                    <section class="howToStart">
+                        <h4>HOW TO START?</h4>
+                        <p>If you would like to learn how to play Magic, and make it a potential hobby in the future, have a look around the website, and learn more (hopefully) about the basics of the game, the colors, the anatomy of a card, and one of the most popular formats of the game.</p>
+                    </section>
                     <section class="video">
                         <figure>
                             <video controls src="/vid/WhatisMagic.mp4">
@@ -36,13 +41,31 @@
                         </figure>
                     </section>
                     <section class="offcicialWeb">
-                        MAGIC: THE GATHERING'S OFFICIAL WEBSITE:
+                        <h4>MAGIC: THE GATHERING'S OFFICIAL WEBSITE:</h4>
+                        <figure>
+                            <img id="mtgLogo" src="/img/mtg_logo.jpg" alt="Logo of Magic: The Gathering">
+                            <figcaption>
+                                Logo of Magic: The Gathering
+                            </figcaption>
+                            <p>If you want to learn more about the gam, or if you would like to check out the leatest set releases of Magic, check out their official website</p>
+                            <a href="https://magic.wizards.com/en" target="_blank">
+                                <input id="officialSitebtn" type="button" value="LEARN MORE">
+                            </a>
+                        </figure>
                     </section>
                 </article>
 
                 <article class="contentDiv">
                     <section id="learnRules">
-                        LEARN THE RULES
+                        <h4>LEARN THE RULES</h4>
+                        <figure>
+                            <a href="https://magic.wizards.com/en/rules" target="_blank">
+                                <img id="ruleLogo" src="/img/random_logo.png" alt="Rule Logo">
+                            </a>
+                            <figcaption>
+                                Rule Logo
+                            </figcaption>
+                        </figure>
                     </section>
                     <table id="deckTable">
                         <tr>
@@ -70,7 +93,11 @@
                         </tr>
                     </table>
                     <section id="findStore">
-                        FIND A STORE
+                        <h4>FIND STORE</h4>
+                        <figure>
+                            <a href="https://locator.wizards.com/" target="_blank"><img id="storeLogo" src="/img/store_logo.png" alt="Store Logo"></a>
+                            <figcaption>Store Logo</figcaption>
+                        </figure>
                     </section>
                 </article>
             </article>
