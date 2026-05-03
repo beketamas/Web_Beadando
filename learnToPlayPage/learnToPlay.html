@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/universal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="learnToPlay.js" defer></script>
+    <script src="/universal.js" defer></script>
     <title>Learn To Play</title>
 </head>
 <body>
@@ -45,24 +46,25 @@
                         </div>
                         <div id="rule">
                             <h4>Standar card types</h4>
-                            <div>
-                                <label for="permanents">Permanents:</label>
-                                <select name="permanents" id="permanents">
-                                    <option value="Lands">Lands</option>
-                                    <option value="Creature">Creature</option>
-                                    <option value="Artifacts">Artifacts</option>
-                                    <option value="Enchantments">Enchantments</option>
-                                    <option value="Planeswalkers">Planeswalkers</option>
-                                    <option value="Battles">Battles</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="nonPermanents">Non-Permanents:</label>
-                                <select name="nonPermanents" id="nonPermanents">
-                                    <option value="Sorceries">Sorceries</option>
-                                    <option value="Instants">Instants</option>
-                                </select>
-                            </div>
+                            <details>
+                                <summary>Permanents</summary>
+                                <ul>
+                                    <li>Lands</li>
+                                    <li>Creature</li>
+                                    <li>Artifacts</li>
+                                    <li>Enchantments</li>
+                                    <li>Planeswalkers</li>
+                                    <li>Battles</li>
+                                </ul>
+                            </details>
+
+                            <details>
+                                <summary>Non-Permanents</summary>
+                                <ul>
+                                    <li>Sorceries</li>
+                                    <li>Instants</li>
+                                </ul>
+                            </details>
                         </div>
                     </section>
 
