@@ -1,5 +1,10 @@
-:root{
-    --bg: rgba(255, 255, 255, 0.5);
+.articleContainer{
+    display: flex;
+    justify-content: safe center;
+    overflow-y: overlay;
+    scrollbar-gutter: stable both-edges;
+    height: 84vh;
+    padding: 20px 0;
 }
 
 .cardColors{
@@ -10,7 +15,6 @@
     width: 80vw;
     padding: 2rem;
     border: 1px solid black;
-    overflow: hidden;
     border-radius: 10px;
 }
 
@@ -22,12 +26,12 @@
     height: 62vh;
 }
 
-.imgConatiner > img{
+.imgContainer > img{
     width: 80px;
     height: auto;
 }
 
-.imgConatiner{
+.imgContainer{
     margin-top: 50px;
 }
 
@@ -38,13 +42,6 @@
     margin-top: 50px;
 }
 
-.articleContainer{
-    display: flex;
-    justify-content: safe center;
-    overflow-y: overlay;
-    scrollbar-gutter: stable both-edges;
-    height: 84vh;
-}
 
 .colorText{
     display: flex;
@@ -84,4 +81,63 @@ ul{
     box-shadow: 0 0 25px rgba(0, 212, 255, 0.25), inset 0 0 20px rgba(0, 212, 255, 0.15);
     color: #E0F2F1;
     backdrop-filter: blur(8px);
+}
+
+
+@media (max-width: 1200px){
+    .cardColors{
+        width: 95vw;
+        height: auto;
+    }
+    .articleContainer {
+        align-items: flex-start;
+    }
+    .colorContainer{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .color{
+        width: 250px;
+        height: auto;
+        min-height: 500px;
+        padding-bottom: 20px;
+    }
+
+    .colorPie img{
+        width: 80vw;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardColors{
+        width: 98vw;
+        padding: 1rem;
+    }
+
+    .colorContainer{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .color{
+        width: 90%;
+        height: auto;
+        min-height: unset;
+        margin-bottom: 20px;
+    }
+
+    .colorPie img{
+        width: 95vw;
+    }
+
+    ul{
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
 }

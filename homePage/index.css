@@ -5,7 +5,7 @@
     align-items: safe center;
     overflow-y: overlay;
     scrollbar-gutter: stable both-edges;
-
+    padding: 20px 0;
     /* overlay: auto;
 
     &::-webkit-scrollbar {
@@ -21,7 +21,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 80vw;
     overflow: hidden;
     border-bottom: none;
@@ -168,35 +168,85 @@ table, #learnRules, #findStore,
     backdrop-filter: blur(8px);
 }
 
+#deckTable{
+    width: 100%;
+    border-collapse: collapse;
+}
 
-@media (max-width: 1385px) {
+#deckTable th, #deckTable td{
+    padding: 12px;
+}
 
-    .contentDiv{
-        flex-direction: column;
-        height: auto;
+@media (max-width: 1200px) {
+    #homeContent{
         width: 90vw;
     }
 
-    .contentGrid {
+    .contentGrid{
         display: grid;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        gap: 20px;
-        height: 200vh;
-    }
-
-    .whatIsMagic, 
-    .howToStart, 
-    .video, 
-    .offcicialWeb {
-        grid-column: span 1 !important;
-        grid-row: auto !important;
-        grid-column-start: auto !important;
-        grid-row-start: auto !important;
+        width: 95%;
         height: auto;
+        gap: 15px;
     }
 
+    .whatIsMagic, .howToStart, .video, .offcicialWeb{
+        grid-row: auto !important;
+        grid-column: span 1 !important;
+        padding: 15px;
+        font-size: 100%;
+    }
+    
+    .contentDiv{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 95%;
+        justify-content: center;
+        height: auto;
+        margin-top: 30px;
+        gap: 10px;
+    }
+
+    #learnRules, #findStore, #deckTable{
+        flex: 1 1 300px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 768px){
     #homeContent{
-        height: 270vh;
+        width: 98vw;
+        border: none;
+    }
+
+    .contentGrid{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .whatIsMagic, .howToStart, .video, .offcicialWeb{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .contentDiv{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    #learnRules, #findStore, #deckTable{
+        height: auto;
+        width: 100%;
+        min-height: 150px;
+    }
+
+    #deckTable{
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        justify-content: center;
+        align-items: center;
     }
 }

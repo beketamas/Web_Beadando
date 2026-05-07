@@ -25,8 +25,8 @@ nyilak.forEach(element => {
     
             nyilak.forEach(element =>{
                 if(element != x.target){
-                    element.style.backgroundColor = "rgba(5, 10, 20, 0.9)";
-                    element.style.color = "black";
+                    element.style.backgroundColor = "rgba(0, 30, 60, 0.9)";
+                    element.style.color = "white";
     
                 }
             });

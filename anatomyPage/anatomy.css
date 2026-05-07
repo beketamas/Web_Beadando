@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
     width: 80vw;
-    height: 120vh;
+    min-height: 120vh;
     overflow: hidden;
     border: 1px solid black;
     border-radius: 10px;
@@ -65,8 +65,6 @@
 }
 
 
-
-
 .cardName, .typeLine, 
 .textBox, .manaCost, .art, 
 .setSymbol, .powToug{
@@ -87,4 +85,66 @@
     box-shadow: 0 0 25px rgba(0, 212, 255, 0.25), inset 0 0 20px rgba(0, 212, 255, 0.15);
     color: #E0F2F1;
     backdrop-filter: blur(8px);
+}
+
+
+@media (max-width: 1200px){
+    #anatomyConten{
+        width: 95vw;
+    }
+
+    .cardContainer{
+        grid-template-columns: 1.5fr 4fr 1.5fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .anatomyDescription{
+        width: 80vw;
+        height: auto;
+        min-height: 15vh;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .cardDiv img{
+        width: 85vw;
+        height: auto;
+    }
+
+
+    .cardName, .typeLine, 
+    .textBox, .manaCost, .art, 
+    .setSymbol, .powToug{
+        width: 70vw;
+        height: 50px;
+        margin: 5px 0;
+    }
+
+    .cardDiv{
+        order: 2;
+    }
+
+    .cardNameContainer,.manaCostContainer, .artContainer{
+        order: 1;
+    }
+
+    .setSymbolContainer, .powTougContainer, .typeLineContainer, .textBoxContainer{
+        order: 3;
+    }
+    
+    .anatomyDescription{
+        width: auto;
+        text-align: center;
+        padding: 20px auto;
+    }
+
 }
