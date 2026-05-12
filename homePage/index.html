@@ -10,26 +10,27 @@
     <title>Home</title>
 </head>
 <body>
+    <a href="#contentGrid"></a>
     <header>
         <nav id="navPages">
             <button id="menu-toggle" onclick="toggle()">Menu</button>
             <div class="navbarPages" id="navbarPages">
-                <a style="color:#E0F2F1;" id="navItemHome" class="nav-item nav-link" href="#">Magic: The Gathering</a>
-                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="#">HOME</a>
-                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/learnToPlayPage/learnToPlay.html">LEARN TO PLAY</a>
-                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
-                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/anatomyPage/anatomy.html">THE ANATOMY</a>
-                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/commanderPage/commander.html">COMMANDER</a>
+                <a id="navItemHome" class="nav-item nav-link" href="#">Magic: The Gathering</a>
+                <a id="navItem" class="nav-item nav-link" href="#">HOME</a>
+                <a id="navItem" class="nav-item nav-link" href="/learnToPlayPage/learnToPlay.html">LEARN TO PLAY</a>
+                <a id="navItem" class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
+                <a id="navItem" class="nav-item nav-link" href="/anatomyPage/anatomy.html">THE ANATOMY</a>
+                <a id="navItem" class="nav-item nav-link" href="/commanderPage/commander.html">COMMANDER</a>
             </div>
         </nav>
     </header>
     <main>
         <div id="homeContainer">
             <article id="homeContent">
-                <article class="contentGrid">
+                <article class="contentGrid" id="contentGrid">
                     <section class="whatIsMagic">
                         <h4>WHAT IS MAGIC?</h4>
-                        <p>Magic: The Gathering is a table top, trading card game. Players in a game of Magic represent powerful dueling wizards, Planeswalkers. Each card a player draws from their deck represents a magical spell which can be used to their advantage in battle.</p>
+                        <p>Magic: The Gathering is a table top, trading card game. Players in a game of Magic represent powerful dueling wizards, <b>Planeswalkers</b>. Each card a player draws from their deck represents a magical spell which can be used to their advantage in battle.</p>
                     </section>
                     <section class="howToStart">
                         <h4>HOW TO START?</h4>
@@ -37,10 +38,18 @@
                     </section>
                     <section class="video">
                         <figure>
-                            <video controls src="/vid/WhatisMagic.mp4">
+                            <video controls poster="/img/tumbnail.png" src="/vid/WhatisMagic.mp4">
 
                             </video>
                         </figure>
+                        <details>
+                            <summary>What is Magic?</summary>
+                            <p>Your Magic the Gathering journey starts now. Take on the role of a powerful mage and traverse the plains in search of battles to be won. Defeat your opponents by casting spells and summoning creatures.
+                                To play, you and your opponent each have a deck of 60 cards, which includes lands and spells. Draw your power, known as mana, from lands to cast spells and use creatures to attack and defend. The play area includes the battlefield, where the action takes place, the library, where you draw a new card from on each turn, and the graveyard for eliminated cards.
+                                You begin by drawing seven cards, which is known as your hand. Throughout the game, you put down land cards to pay for spells, while also taking turns to attack or block your opponent. The goal is to get their life count down from 20 to 0. Power and toughness ratings on each card will dictate the damage dealt, the life points lost, and which creatures are destroyed.
+                                Learn to play with the starter kit containing a how-to-play guide and two ready-to-play decks for you and your opponent. So, let your magic journey begin!
+                            </p>
+                        </details>
                     </section>
                     <section class="offcicialWeb">
                         <h4>MAGIC: THE GATHERING'S OFFICIAL WEBSITE:</h4>
@@ -109,6 +118,8 @@
     <footer>
         <div id="footerContainer">
             <div id="footerContent">
+                <p>Made by: Beke Tamas</p>
+                <p>NEPTUN CODE: IYE59T</p>
             </div>
         </div>
     </footer>

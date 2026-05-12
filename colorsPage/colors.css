@@ -7,11 +7,16 @@
     padding: 20px 0;
 }
 
+#navbarPages a:nth-child(4){
+    text-decoration: underline;
+}
+
 .cardColors{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 130vh;
+    height: auto;
+    min-height: 130vh;
     width: 80vw;
     padding: 2rem;
     border: 1px solid black;
@@ -22,8 +27,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 13vw;
-    height: 62vh;
+    width: auto;
+    min-width: 13vw;
+    height: auto;
+    min-height: 62vh;
 }
 
 .imgContainer > img{
@@ -81,6 +88,12 @@ ul{
     box-shadow: 0 0 25px rgba(0, 212, 255, 0.25), inset 0 0 20px rgba(0, 212, 255, 0.15);
     color: #E0F2F1;
     backdrop-filter: blur(8px);
+}
+
+p, li{
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    font-size: clamp(1rem, 1.05vw, 1.15rem);
 }
 
 

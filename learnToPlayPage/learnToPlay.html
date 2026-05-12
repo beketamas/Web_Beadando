@@ -11,16 +11,17 @@
     <title>Learn To Play</title>
 </head>
 <body>
+    <a href="#rules"></a>
     <header>
         <nav id="navPages">
             <button id="menu-toggle" onclick="toggle()">Menu</button>
             <div class="navbarPages" id="navbarPages">
-                <a style="color:#E0F2F1;" id="navItemHome" class="nav-item nav-link" href="#">Magic: The Gathering</a>
-                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/homePage/index.html">HOME</a>
-                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="#">LEARN TO PLAY</a>
-                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
-                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/anatomyPage/anatomy.html">THE ANATOMY</a>
-                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/commanderPage/commander.html">COMMANDER</a>
+                <a id="navItemHome" class="nav-item nav-link" href="#">Magic: The Gathering</a>
+                <a id="navItem" class="nav-item nav-link" href="/homePage/index.html">HOME</a>
+                <a id="navItem" class="nav-item nav-link" href="#">LEARN TO PLAY</a>
+                <a id="navItem" class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
+                <a id="navItem" class="nav-item nav-link" href="/anatomyPage/anatomy.html">THE ANATOMY</a>
+                <a id="navItem" class="nav-item nav-link" href="/commanderPage/commander.html">COMMANDER</a>
             </div>
         </nav>
     </header>
@@ -29,7 +30,7 @@
         <div class="learnToPlayContainer">
             <article class="learnToPlayContent">
                 <div class="ruleContainer">
-                    <section class="rules">
+                    <section class="rules" id="rules">
                         <div id="rule">
                             <h4>How to win</h4>
                             <ul>
@@ -41,8 +42,8 @@
                         <div id="rule">
                             <h4>Land and Mana</h4>
                             <figure id="imageContainer">
-                                    <img id="land" src="/img/land.jpg" alt="Picture of a Land card">
-                                    <img id="mana" src="/img/mana.png" alt="Picture of a White mana symbol">
+                                    <a target="_blank" href="/img/land.jpg"><img id="land" src="/img/land.jpg" alt="Picture of a Land card"></a>
+                                    <a target="_blank" href="/img/mana.png"><img id="mana" src="/img/mana.png" alt="Picture of a White mana symbol"></a>
                             </figure>
                         </div>
                         <div id="rule">
@@ -126,7 +127,7 @@
                         <p>Technically, a spell is an object on the stack that exists before the spell takes effect. Players turn cards into spells by casting them, usually from non-land cards in their hand.</p>
                     </aside>
                     <aside class="insideLink">
-                        <p>To learn more about a magic card, visit the card's anatomy page.</p>
+                        <p>To learn more about a magic card, visit the card's <a href="/anatomyPage/anatomy.html"><b>anatomy</b></a> page.</p>
                     </aside>
                 </section>
             </article>
@@ -136,6 +137,8 @@
     <footer>
         <div id="footerContainer">
             <div id="footerContent">
+                <p>Made by: Beke Tamas</p>
+                <p>NEPTUN CODE: IYE59T</p>
             </div>
         </div>
     </footer>

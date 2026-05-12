@@ -1,7 +1,6 @@
-:root{
-    --bg: rgba(255, 255, 255, 0.5);
+#navbarPages a:nth-child(6){
+    text-decoration: underline;
 }
-
 
 .commanderContainer{
     display: flex;
@@ -10,6 +9,7 @@
     align-items: safe center;
     overflow-y: overlay;
     scrollbar-gutter: stable both-edges;
+    padding: 20px 0;
 
 }
 
@@ -32,7 +32,8 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     width: 80vw;
-    height: 80vh;
+    height: auto;
+    min-height: 80vh;
     gap: 10px;
     padding: 50px;
 }
@@ -72,7 +73,8 @@
     display: flex;
     flex-direction: column;
     width: 70vw;
-    height: 25vh;
+    height: auto;
+    min-height: 25vh;
     padding: 10px;
 }
 
@@ -132,6 +134,13 @@ th{
     height: 5vh;
 }
 
+p, li{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 1.1vw, 1.25rem);
+
+}
+
 
 #commanderStandard, .whyPlayContainer,
 .deckContainer, .singletonContainer,
@@ -156,6 +165,11 @@ th{
 
 #buttonDiv > input{
     background-color: gray;
+    cursor: pointer;
+}
+
+input, textarea{
+    color: black;
 }
 
 @media (max-width: 1200px){

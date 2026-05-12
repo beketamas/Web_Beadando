@@ -1,11 +1,12 @@
-:root{
-    --bg: rgba(20, 25, 30, 0.7);
-}
-
 *{
     margin: 0;
     padding: 0;
     color: #FFFFFF;
+    font-family: sans-serif;
+}
+
+#navbarPages > a{
+    color:#E0F2F1;
 }
 
 .navbarPages{
@@ -18,8 +19,6 @@
     border: 2px solid black;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    /*background-color: rgba(173, 172, 172, 0.5);*/
-    /*background-color: var(--bg);*/
 }
 
 #navItemHome{
@@ -50,11 +49,14 @@
 }
 
 #footerContent{
-    /*background-color: var(--bg);*/
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 80vw;
-    height: 8vh;
+    height: auto;
+    min-height: 8vh;
+    flex-direction: row;
+    gap: 200px;
 }
 
 body{

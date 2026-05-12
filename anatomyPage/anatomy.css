@@ -1,7 +1,6 @@
-:root{
-    --bg: rgba(255, 255, 255, 0.5);
+#navbarPages a:nth-child(5){
+    text-decoration: underline;
 }
-
 .anatomyContainer{
     display: flex;
     height: 84vh;
@@ -9,6 +8,7 @@
     align-items: safe center;
     overflow-y: overlay;
     scrollbar-gutter: stable both-edges;
+    padding: 20px 0;
 }
 
 .card{
@@ -24,6 +24,7 @@
     justify-content: center;
     width: 80vw;
     min-height: 120vh;
+    height: auto;
     overflow: hidden;
     border: 1px solid black;
     border-radius: 10px;
@@ -34,7 +35,8 @@
     display: flex;
     margin-top: 50px;
     width: 50vw;
-    height: 20vh;
+    height: auto;
+    min-height: 20vh;
     justify-content: center;
     align-items: center;
 }
@@ -86,7 +88,16 @@
     color: #E0F2F1;
     backdrop-filter: blur(8px);
 }
+p{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 1.1vw, 1.25rem);
 
+}
+
+figcaption{
+    color: black;
+}
 
 @media (max-width: 1200px){
     #anatomyConten{

@@ -31,7 +31,7 @@ nyilak.forEach(element => {
                 }
             });
     
-            block.textContent = tomb[parseInt(x.target.title)];
+            block.innerHTML = `<p>${tomb[parseInt(x.target.title)]}</p>`;
         }
 
     })

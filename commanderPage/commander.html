@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="/universal.css">
     <link rel="stylesheet" href="commander.css">
     <script src="/universal.js" defer></script>
+    <script src="commander.js" defer></script>
     <title>Document</title>
 </head>
 <body>
+    <a href="#formatContainer"></a>
     <header>
         <nav id="navPages">
             <button id="menu-toggle" onclick="toggle()">Menu</button>
             <div class="navbarPages" id="navbarPages">
-                <a style="color:#E0F2F1;" id="navItemHome" class="nav-item nav-link" href="#">Magic: The Gathering</a>
-                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/homePage/index.html">HOME</a>
-                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/learnToPlayPage/learnToPlay.html">LEARN TO PLAY</a>
-                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
-                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="/anatomyPage/anatomy.html">THE ANATOMY</a>
-                <a style="color:#E0F2F1;" id="navItem" class="nav-item nav-link" href="#">COMMANDER</a>
+                <a id="navItemHome" class="nav-item nav-link" href="#">Magic: The Gathering</a>
+                <a id="navItem" class="nav-item nav-link" href="/homePage/index.html">HOME</a>
+                <a id="navItem" class="nav-item nav-link" href="/learnToPlayPage/learnToPlay.html">LEARN TO PLAY</a>
+                <a id="navItem" class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
+                <a id="navItem" class="nav-item nav-link" href="/anatomyPage/anatomy.html">THE ANATOMY</a>
+                <a id="navItem" class="nav-item nav-link" href="#">COMMANDER</a>
             </div>
         </nav>
     </header>
@@ -27,7 +29,7 @@
         <div class="commanderContainer">
             <article id="commanderContent">
                 
-                 <article class="formatContainer">
+                 <article class="formatContainer" id="formatContainer">
                     
                     <section class="deckContainer">
                         <h4>Your 100-card deck</h4>
@@ -43,7 +45,9 @@
                     
                     <section class="commanderCardContainer">
                         <figure>
-                            <img id="commander_img" src="/img/commander_card.jpg" alt="Commander Card">
+                            <a target="_blank" href="/img/commander_card.jpg">
+                                <img id="commander_img" src="/img/commander_card.jpg" alt="Commander Card">
+                            </a>
                         </figure>
 
                         <div class="textContainer">
@@ -61,19 +65,19 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Difference 1</td>
-                                    <td>Example 1</td>
-                                    <td>Example 1</td>
+                                    <td>Deck Size:</td>
+                                    <td>100 cards</td>
+                                    <td>60 cards</td>
                                 </tr>
                                 <tr>
-                                    <td>Difference 2</td>
-                                    <td>Example 2</td>
-                                    <td>Example 2</td>
+                                    <td>Number of Players</td>
+                                    <td>3-5 players</td>
+                                    <td>2 players</td>
                                 </tr>
                                 <tr>
-                                    <td>Difference 3</td>
-                                    <td>Example 3</td>
-                                    <td>Example 3</td>
+                                    <td>Game Of Duration</td>
+                                    <td>120 minutes</td>
+                                    <td>20 minutes</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -85,9 +89,9 @@
                 <section class="whyPlayContainer">
                     <h4>Why play commander?</h4>
                     <ul>
-                        <li>item 1</li>
-                        <li>item 2</li>
-                        <li>item 2</li>
+                        <li>Multiplayer games</li>
+                        <li>Great to play with friends</li>
+                        <li>Cards don't rotate</li>
                     </ul>
                     <p>Commander is the most popular, casual, and social format in Magic: The Gathering, offering a non-rotating, budget-friendly, and highly creative 100-card multiplayer experience. It allows players to build around specific legendary creatures, utilize nearly any card in MTG history, and enjoy varied, unpredictable games that focus on fun over cutthroat competition. It is also great to play with friends, and if you're playing a game of Commander with three or more people, you play against each other in a free-for-all multiplayer format. No matter the outcome, Commander gives players the tools to express themselves through strategy, skill, and a whole lot of deck building fun.</p>
                 </section>
@@ -99,23 +103,23 @@
 
                     <div>
                         <label for="email">Your Email</label><br>
-                        <input type="email" name="email" id="email">
+                        <input maxlength="30" type="email" name="email" id="email">
                     </div>
 
                     <div>
                         <label for="commanderOrStandard">Favourite Format</label><br>
     
-                        <input type="radio" name="commanderOrStandard" id="commander">
+                        <input type="radio" name="format" id="commander" value="Commander">
                         <label for="commander">Commander</label><br>
     
-                        <input type="radio" name="commanderOrStandard" id="standard">
+                        <input type="radio" name="format" id="standard" value="Standard">
                         <label for="commander">Standard</label><br>
                     </div>
 
                     <div>
                         <label for="opinnion">Why is this your favourite?</label><br>
     
-                        <textarea name="opinnion" id="opinnion" rows="5" cols="50">
+                        <textarea maxlength="500" name="opinnion" id="opinnion" rows="5" cols="50">
                         </textarea><br>
                     </div>
 
@@ -125,8 +129,8 @@
                     </div>
 
                     <div id="buttonDiv">
-                        <input type="submit" value="SUBMIT">
-                        <input type="button" value="RESET">
+                        <input id="submitBtn" type="submit" value="SUBMIT">
+                        <input id="resetBtn" type="reset" value="RESET">
                     </div>
                 </form>
 
@@ -136,6 +140,8 @@
     <footer>
         <div id="footerContainer">
             <div id="footerContent">
+                <p>Made by: Beke Tamas</p>
+                <p>NEPTUN CODE: IYE59T</p>
             </div>
         </div>
     </footer>
