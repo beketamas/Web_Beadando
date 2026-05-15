@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="anatomy.js" defer></script>
     <script src="/universal.js" defer></script>
-    <title>Document</title>
+    <title>Anatomy Page</title>
 </head>
 <body>
     <a href="#cardContainer"></a>
@@ -17,18 +17,18 @@
             <button id="menu-toggle" onclick="toggle()">Menu</button>
             <div class="navbarPages" id="navbarPages">
                 <a id="navItemHome" class="nav-item nav-link" href="#">Magic: The Gathering</a>
-                <a id="navItem" class="nav-item nav-link" href="/homePage/index.html">HOME</a>
-                <a id="navItem" class="nav-item nav-link" href="/learnToPlayPage/learnToPlay.html">LEARN TO PLAY</a>
-                <a id="navItem" class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
-                <a id="navItem" class="nav-item nav-link" href="#">THE ANATOMY</a>
-                <a id="navItem" class="nav-item nav-link" href="/commanderPage/commander.html">COMMANDER</a>
+                <a class="nav-item nav-link" href="/homePage/index.html">HOME</a>
+                <a class="nav-item nav-link" href="/learnToPlayPage/learnToPlay.html">LEARN TO PLAY</a>
+                <a class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
+                <a class="nav-item nav-link" href="#">THE ANATOMY</a>
+                <a class="nav-item nav-link" href="/commanderPage/commander.html">COMMANDER</a>
             </div>
         </nav>
     </header>
     <main>
-        <article class="anatomyContainer">
+        <div class="anatomyContainer">
             <div id="anatomyContent">
-                <section class="cardContainer" id="cardContainer">
+                <div class="cardContainer" id="cardContainer">
                     <div class="cardDiv">
                         <figure class="card">
                             <img src="/img/anatomy_card.jpg" alt="Anatomy Card">
@@ -36,61 +36,62 @@
                         </figure>
                     </div>
     
-                    <section class="cardNameContainer">
-                        <div class="cardName" id="box" title="0">
+                    <div class="cardNameContainer">
+                        <div id="cardName" class="box" title="0">
                             <p>Card Name</p>
                         </div>
-                    </section>
+                    </div>
     
                     <div class="blankDiv"> </div>
     
-                    <section class="typeLineContainer">
-                        <div class="typeLine" id="box" title="1">
+                    <div class="typeLineContainer">
+                        <div id="typeLine" class="box" title="1">
                             <p>Type Line</p>
                         </div>
-                    </section>
+                    </div>
     
-                    <section class="textBoxContainer">
-                        <div class="textBox" id="box" title="2">
+                    <div class="textBoxContainer">
+                        <div id="textBox" class="box" title="2">
                             <p>Text Box</p>
                         </div>
-                    </section>
+                    </div>
     
-                    <section class="manaCostContainer">
-                        <div class="manaCost" id="box" title="3">
+                    <div class="manaCostContainer">
+                        <div id="manaCost" class="box" title="3">
                             <p>Mana Cost</p>
                         </div>
-                    </section>
+                    </div>
     
-                    <section class="artContainer">
-                        <div class="art" id="box" title="4">
+                    <div class="artContainer">
+                        <div id="art" class="box" title="4">
                             <p>Art</p>
                         </div>
-                    </section>
+                    </div>
     
-                    <section class="setSymbolContainer">
-                        <div class="setSymbol" id="box" title="5">
+                    <div class="setSymbolContainer">
+                        <div id="setSymbol" class="box" title="5">
                             <p>Set Symbol</p>
                         </div>
-                    </section>
+                    </div>
     
-                    <section class="powTougContainer">
-                        <div class="powToug" id="box" title="6">
+                    <div class="powTougContainer">
+                        <div id="powToug" class="box" title="6">
                             <p>Power/Toughness</p>
                         </div>
-                    </section>
+                    </div>
     
-                </section>
+                </div>
     
-                <section class="anatomyDescription" id="anatomyDescription">
+                <div class="anatomyDescription" id="anatomyDescription">
     
-                </section>
+                </div>
             </div>
-        </article>
+        </div>
     </main>
     <footer>
         <div id="footerContainer">
             <div id="footerContent">
+                <button id="hcBtn" type="button">HIGH CONTRAST</button>
                 <p>Made by: Beke Tamas</p>
                 <p>NEPTUN CODE: IYE59T</p>
             </div>

@@ -3,7 +3,7 @@
     height: 84vh;
     justify-content: safe center;
     align-items: safe center;
-    overflow-y: overlay;
+    overflow-y: auto;
     scrollbar-gutter: stable both-edges;
     padding: 20px 0;
 }
@@ -17,7 +17,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 120vh;
+    height: auto;
+    min-height: 130vh;
     width: 80vw;
     overflow: hidden;
     border-bottom: none;
@@ -63,7 +64,6 @@ video{
     height: auto;
     display: block;
     max-width: 100%;
-
 }
 
 .video > figure{
@@ -86,7 +86,8 @@ video{
     align-items: center;
     margin-top: 50px;
     width: 70vw;
-    height: 25vh;
+    height: auto;
+    min-height: 25vh;
     border-radius: 10px;
 
 }
@@ -122,7 +123,8 @@ p{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 20vh;
+    height: auto;
+    min-height: 20vh;
 }
 
 #tableTitle{
@@ -173,6 +175,7 @@ table, #learnRules, #findStore,
 #deckTable{
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
 #deckTable th, #deckTable td{

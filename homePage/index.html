@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/universal.css">
     <link rel="stylesheet" href="index.css">
     <script src="/universal.js" defer></script>
-    <title>Home</title>
+    <title>Home Page</title>
 </head>
 <body>
     <a href="#contentGrid"></a>
@@ -16,27 +16,28 @@
             <button id="menu-toggle" onclick="toggle()">Menu</button>
             <div class="navbarPages" id="navbarPages">
                 <a id="navItemHome" class="nav-item nav-link" href="#">Magic: The Gathering</a>
-                <a id="navItem" class="nav-item nav-link" href="#">HOME</a>
-                <a id="navItem" class="nav-item nav-link" href="/learnToPlayPage/learnToPlay.html">LEARN TO PLAY</a>
-                <a id="navItem" class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
-                <a id="navItem" class="nav-item nav-link" href="/anatomyPage/anatomy.html">THE ANATOMY</a>
-                <a id="navItem" class="nav-item nav-link" href="/commanderPage/commander.html">COMMANDER</a>
+                <a class="nav-item nav-link" href="#">HOME</a>
+                <a class="nav-item nav-link" href="/learnToPlayPage/learnToPlay.html">LEARN TO PLAY</a>
+                <a class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
+                <a class="nav-item nav-link" href="/anatomyPage/anatomy.html">THE ANATOMY</a>
+                <a class="nav-item nav-link" href="/commanderPage/commander.html">COMMANDER</a>
             </div>
         </nav>
     </header>
     <main>
         <div id="homeContainer">
-            <article id="homeContent">
-                <article class="contentGrid" id="contentGrid">
+            <div id="homeContent">
+                <h1>Magic: The Gathering</h1>
+                <div class="contentGrid" id="contentGrid">
                     <section class="whatIsMagic">
-                        <h4>WHAT IS MAGIC?</h4>
+                        <h2>WHAT IS MAGIC?</h2>
                         <p>Magic: The Gathering is a table top, trading card game. Players in a game of Magic represent powerful dueling wizards, <b>Planeswalkers</b>. Each card a player draws from their deck represents a magical spell which can be used to their advantage in battle.</p>
                     </section>
                     <section class="howToStart">
-                        <h4>HOW TO START?</h4>
+                        <h2>HOW TO START?</h2>
                         <p>If you would like to learn how to play Magic, and make it a potential hobby in the future, have a look around the website, and learn more about the basics of the game, the colors, the anatomy of a card, and one of the most popular formats of the game.</p>
                     </section>
-                    <section class="video">
+                    <div class="video">
                         <figure>
                             <video controls poster="/img/tumbnail.png" src="/vid/WhatisMagic.mp4">
 
@@ -50,25 +51,23 @@
                                 Learn to play with the starter kit containing a how-to-play guide and two ready-to-play decks for you and your opponent. So, let your magic journey begin!
                             </p>
                         </details>
-                    </section>
+                    </div>
                     <section class="offcicialWeb">
-                        <h4>MAGIC: THE GATHERING'S OFFICIAL WEBSITE:</h4>
+                        <h2>MAGIC: THE GATHERING'S OFFICIAL WEBSITE:</h2>
                         <figure>
                             <img id="mtgLogo" src="/img/mtg_logo.jpg" alt="Logo of Magic: The Gathering">
                             <figcaption>
                                 Logo of Magic: The Gathering
                             </figcaption>
-                            <p>If you want to learn more about the game, or if you would like to check out the leatest set releases of Magic, check out their official website</p>
-                            <a href="https://magic.wizards.com/en" target="_blank">
-                                <input id="officialSitebtn" type="button" value="LEARN MORE">
-                            </a>
                         </figure>
+                        <p>If you want to learn more about the game, or if you would like to check out the leatest set releases of Magic, check out their official website</p>
+                        <button onclick="location.href='https://magic.wizards.com/en'" id="officialSitebtn" type="button">LEARN MORE</button>
                     </section>
-                </article>
+                </div>
 
-                <article class="contentDiv">
+                <div class="contentDiv">
                     <section id="learnRules">
-                        <h4>LEARN THE RULES</h4>
+                        <h2>LEARN THE RULES</h2>
                         <figure>
                             <a href="https://magic.wizards.com/en/rules" target="_blank">
                                 <img id="ruleLogo" src="/img/random_logo.png" alt="Rule Logo">
@@ -104,20 +103,21 @@
                         </tr>
                     </table>
                     <section id="findStore">
-                        <h4>FIND STORE</h4>
+                        <h2>FIND STORE</h2>
                         <figure>
                             <a href="https://locator.wizards.com/" target="_blank"><img id="storeLogo" src="/img/store_logo.png" alt="Store Logo"></a>
                             <figcaption>Store Logo</figcaption>
                         </figure>
                     </section>
-                </article>
-            </article>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer>
         <div id="footerContainer">
             <div id="footerContent">
+                <button id="hcBtn" type="button">HIGH CONTRAST</button>
                 <p>Made by: Beke Tamas</p>
                 <p>NEPTUN CODE: IYE59T</p>
             </div>

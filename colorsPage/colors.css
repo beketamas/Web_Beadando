@@ -1,7 +1,7 @@
 .articleContainer{
     display: flex;
     justify-content: safe center;
-    overflow-y: overlay;
+    overflow-y: auto;
     scrollbar-gutter: stable both-edges;
     height: 84vh;
     padding: 20px 0;
@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     height: auto;
-    min-height: 130vh;
+    min-height: 160vh;
     width: 80vw;
     padding: 2rem;
     border: 1px solid black;

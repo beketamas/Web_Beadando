@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="commander.css">
     <script src="/universal.js" defer></script>
     <script src="commander.js" defer></script>
-    <title>Document</title>
+    <title>Commander Page</title>
 </head>
 <body>
     <a href="#formatContainer"></a>
@@ -17,11 +17,11 @@
             <button id="menu-toggle" onclick="toggle()">Menu</button>
             <div class="navbarPages" id="navbarPages">
                 <a id="navItemHome" class="nav-item nav-link" href="#">Magic: The Gathering</a>
-                <a id="navItem" class="nav-item nav-link" href="/homePage/index.html">HOME</a>
-                <a id="navItem" class="nav-item nav-link" href="/learnToPlayPage/learnToPlay.html">LEARN TO PLAY</a>
-                <a id="navItem" class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
-                <a id="navItem" class="nav-item nav-link" href="/anatomyPage/anatomy.html">THE ANATOMY</a>
-                <a id="navItem" class="nav-item nav-link" href="#">COMMANDER</a>
+                <a class="nav-item nav-link" href="/homePage/index.html">HOME</a>
+                <a class="nav-item nav-link" href="/learnToPlayPage/learnToPlay.html">LEARN TO PLAY</a>
+                <a class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
+                <a class="nav-item nav-link" href="/anatomyPage/anatomy.html">THE ANATOMY</a>
+                <a class="nav-item nav-link" href="#">COMMANDER</a>
             </div>
         </nav>
     </header>
@@ -29,17 +29,18 @@
         <div class="commanderContainer">
             <article id="commanderContent">
                 
-                 <article class="formatContainer" id="formatContainer">
+                <h1>COMMANDER FORMAT</h1>
+                <div class="formatContainer" id="formatContainer">
                     
                     <section class="deckContainer">
-                        <h4>Your 100-card deck</h4>
+                        <h2>Your 100-card deck</h2>
                         <figure>
                             <img src="/img/magic_card_back.png" alt="100-card deck upsidedown">
                         </figure>
                     </section>
                     
                     <section class="singletonContainer">
-                        <h4>Singleton Rule</h4>
+                        <h2>Singleton Rule</h2>
                         <p>A deck has no 100 card minimum. Building a deck that works consistently yet contains no duplicates can be a creative challenge, or it can be the perfect format to take advantage of a small card collection that might not have multiple copies of rare cards.</p>
                     </section>
                     
@@ -48,20 +49,24 @@
                             <a target="_blank" href="/img/commander_card.jpg">
                                 <img id="commander_img" src="/img/commander_card.jpg" alt="Commander Card">
                             </a>
+                            <figcaption>Magic: The Gathering Commander card</figcaption>
                         </figure>
 
                         <div class="textContainer">
-                            <h4>Your Commander</h4>
+                            <h2>Your Commander</h2>
                             <p>A player's commander works differently from other cards in the game. Before the game begins, each player sets their commander aside in a special zone, the command zone. You may cast your commander from the command zone for its normal costs plus the "commander tax", an additional for each previous time it has been cast from the command zone this way (initially an additional cost of 0). If your commander moves to the graveyard or exile, you may choose to put it into the command zone as a state-based action upon it entering said zone; therefore, abilities that trigger when a creature dies or is exiled work as normal when a commander dies or is exiled, but the commander will still end up in the command zone. If your commander moves to a hidden zone (one that is not visible to all players, such as your hand or library), you may choose to put it back into the command zone as a replacement effect.</p>
                         </div>
                     </section>
 
-                    <section class="tableContainer">
+                    <div class="tableContainer">
                         <table id="differenceTable">
+                            <caption>Commander vs Standard</caption>
                             <thead>
-                                <th></th>
-                                <th>Commander</th>
-                                <th>Standard</th>
+                                <tr>                                    
+                                    <th></th>
+                                    <th>Commander</th>
+                                    <th>Standard</th>
+                                </tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -81,13 +86,13 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </section>
+                    </div>
 
-                </article>
+                </div>
 
 
                 <section class="whyPlayContainer">
-                    <h4>Why play commander?</h4>
+                    <h2>Why play commander?</h2>
                     <ul>
                         <li>Multiplayer games</li>
                         <li>Great to play with friends</li>
@@ -98,8 +103,8 @@
 
                 <hr>
 
-                <form action="" method="post" id="commanderStandard">
-                    <h4>Commander Or Standard</h4>
+                <form action="mailto:iye59t@inf.elte.hu" method="post" id="commanderStandard">
+                    <h2>Commander Or Standard</h2>
 
                     <div>
                         <label for="email">Your Email</label><br>
@@ -107,7 +112,7 @@
                     </div>
 
                     <div>
-                        <label for="commanderOrStandard">Favourite Format</label><br>
+                        <label for="commander">Favourite Format</label><br>
     
                         <input type="radio" name="format" id="commander" value="Commander">
                         <label for="commander">Commander</label><br>
@@ -140,6 +145,7 @@
     <footer>
         <div id="footerContainer">
             <div id="footerContent">
+                <button id="hcBtn" type="button">HIGH CONTRAST</button>
                 <p>Made by: Beke Tamas</p>
                 <p>NEPTUN CODE: IYE59T</p>
             </div>

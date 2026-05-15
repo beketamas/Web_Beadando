@@ -1,6 +1,6 @@
 "use strict"
 
-const boxes = document.querySelectorAll("#box");
+const boxes = document.querySelectorAll(".box");
 
 const tomb= [
     "Name refers in Magic: The Gathering to the name of a card or token. It is one of the characteristics of an object. The name of a card is positioned in the title bar at the top left corner of the card and is its primary method of identification. Each English card name is unique, though some other languages have used the same name for multiple cards. Also, translated cards with super-long names have been typeset using a different font ? either the normal font compressed, or an actual smaller point size. Because of language issues, Creative tries not to change the gender when reprinting a card with new art.",

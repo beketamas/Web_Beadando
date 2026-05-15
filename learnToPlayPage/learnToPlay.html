@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="learnToPlay.js" defer></script>
     <script src="/universal.js" defer></script>
-    <title>Learn To Play</title>
+    <title>Learn To Play Page</title>
 </head>
 <body>
     <a href="#rules"></a>
@@ -17,11 +17,11 @@
             <button id="menu-toggle" onclick="toggle()">Menu</button>
             <div class="navbarPages" id="navbarPages">
                 <a id="navItemHome" class="nav-item nav-link" href="#">Magic: The Gathering</a>
-                <a id="navItem" class="nav-item nav-link" href="/homePage/index.html">HOME</a>
-                <a id="navItem" class="nav-item nav-link" href="#">LEARN TO PLAY</a>
-                <a id="navItem" class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
-                <a id="navItem" class="nav-item nav-link" href="/anatomyPage/anatomy.html">THE ANATOMY</a>
-                <a id="navItem" class="nav-item nav-link" href="/commanderPage/commander.html">COMMANDER</a>
+                <a class="nav-item nav-link" href="/homePage/index.html">HOME</a>
+                <a class="nav-item nav-link" href="#">LEARN TO PLAY</a>
+                <a class="nav-item nav-link" href="/colorsPage/colors.html">THE COLORS</a>
+                <a class="nav-item nav-link" href="/anatomyPage/anatomy.html">THE ANATOMY</a>
+                <a class="nav-item nav-link" href="/commanderPage/commander.html">COMMANDER</a>
             </div>
         </nav>
     </header>
@@ -31,7 +31,7 @@
             <article class="learnToPlayContent">
                 <div class="ruleContainer">
                     <section class="rules" id="rules">
-                        <div id="rule">
+                        <div class="rule">
                             <h4>How to win</h4>
                             <ul>
                                 <li>Reducing opponent's life to 0</li>
@@ -39,14 +39,14 @@
                                 <li>Other card, and game designs (posion counters)</li>
                             </ul>
                         </div>
-                        <div id="rule">
+                        <div class="rule">
                             <h4>Land and Mana</h4>
                             <figure id="imageContainer">
                                     <a target="_blank" href="/img/land.jpg"><img id="land" src="/img/land.jpg" alt="Picture of a Land card"></a>
                                     <a target="_blank" href="/img/mana.png"><img id="mana" src="/img/mana.png" alt="Picture of a White mana symbol"></a>
                             </figure>
                         </div>
-                        <div id="rule">
+                        <div class="rule">
                             <h4>Standar card types</h4>
                             <details>
                                 <summary>Permanents</summary>
@@ -116,7 +116,7 @@
 
                     <aside class="sSickness">
                         <h4>SUMMONING SICKNESS</h4>
-                        <p>Summoning sickness is a term for the rule that a creature cannot attack or use activated abilities either with the tap or untap smybol if it has not been continuously controlled by a player since the beginning of that player?s mot recent turn.</p>
+                        <p>Summoning sickness is a term for the rule that a creature cannot attack or use activated abilities either with the tap or untap smybol if it has not been continuously controlled by a player since the beginning of that player's most recent turn.</p>
                     </aside>
                     <aside class="theStack">
                         <h4>THE STACK</h4>
@@ -137,6 +137,7 @@
     <footer>
         <div id="footerContainer">
             <div id="footerContent">
+                <button id="hcBtn" type="button">HIGH CONTRAST</button>
                 <p>Made by: Beke Tamas</p>
                 <p>NEPTUN CODE: IYE59T</p>
             </div>

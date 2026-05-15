@@ -7,7 +7,7 @@
     height: 84vh;
     justify-content: safe center;
     align-items: safe center;
-    overflow-y: overlay;
+    overflow-y: auto;
     scrollbar-gutter: stable both-edges;
     padding: 20px 0;
 
@@ -96,7 +96,8 @@ hr{
     align-items: center;
     justify-content: center;
     width: 40vw;
-    height: 65vh;
+    height: auto;
+    min-height: 65vh;
     gap: 20px;
     margin-bottom: 40px;
     padding: 20px;
