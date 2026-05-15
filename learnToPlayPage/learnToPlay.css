@@ -2,6 +2,7 @@
     --bg: rgba(20, 25, 30, 0.7);
 }
 
+
 #navbarPages a:nth-child(3){
     text-decoration: underline;
 }
@@ -36,6 +37,7 @@
     flex: 1;
     border-top: none;
     border-bottom: none;
+    align-items: center;
 }
 
 .termContainer{
@@ -115,7 +117,6 @@ ul{
     height: 80px;
     background-color: #4B0082;
     background: rgba(0, 30, 60, 0.9);
-    /*border: 2px solid black;*/
     display: flex;
     align-items: center;
     justify-content: center;
